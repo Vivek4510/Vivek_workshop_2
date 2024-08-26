@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0px;
+        }
+        *{
+            scroll-behavior: smooth;
+            font-family: "Signika", sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            position: fixed;
+            top: 0px;
+            z-index: 10;
+        }
+        .content{
+            display: flex;
+            gap: 40px;
+            padding-top: 20px;
+            font-size: x-large;
+        }
+        .nav>span{
+            font-size: xx-large;
+        }
+        .cl1{
+            background-image: url(./img1.avif);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-attachment: fixed;
+        }
+        .box1{
+            border: 1px solid black;
+            height: 75%;
+            width: 60%;
+            background: rgba( 255, 255, 255, 0.65 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 4px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            display: flex;
+            margin-top: 10%;
+            transition: all 1s ease;
+        }
+        .box1:hover{
+            box-shadow: 5px 5px 15px 5px white;
+            transform: scale(1.05);
+            transition: 0.5s;
+        }
+        .box1 img{
+            height: 75%;
+            margin-top: 70px;
+            margin-left: 50px;
+            width: 50%;
+            border-radius: 15px;
+        }
+        .t2{
+            margin-top: 150px;
+            margin-left: 20px;
+            padding-right: 20px;
+        }
+        .t2 span{
+            line-height: 1.6;
+            text-align: justify;
+        }
+        #box2,#box3{
+            margin-top: 10%;
+        }
+        #box2 .t2{
+            width: 50%;
+        }
+        #box2 img{
+            width: 50%;
+            margin-right: 50px;
+        }
+        #cl2{
+            background-image: url(./img3.avif);
+            background-attachment: fixed;
+            z-index: 1;
+        }
+        #cl3{
+            background-image: url(./img4.avif);
+            background-attachment: fixed;
+            z-index: 2;
+        }
+        footer{
+            text-align: center;
+            padding: 20px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="cl1" id="cl1">
+        <nav class="nav">
+            <span>Adorable Puppies</span>
+            <div class="content">
+                <a href="#cl1">Playful Puppies</a>
+                <a href="#cl2">Sleepy Puppies</a>
+                <a href="#cl3">Curious Puppies</a>
+            </div>
+        </nav>
+        <div class="box1">
+            <img src="./img1.avif" alt="">
+            <div class="t2">
+                <h1>Playful Puppies</h1>
+                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod delectus voluptatibus atque cumque facilis. Eius dolore error natus pariatur minima quas, iure ex doloribus id, ducimus eum dolorum officia voluptate?</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="cl1" id="cl2">
+        <div class="box1" id="box2">
+            <div class="t2">
+                <h1>Sleepy Puppies</h1>
+                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod delectus voluptatibus atque cumque facilis. Eius dolore error natus pariatur minima quas, iure ex doloribus id, ducimus eum dolorum officia voluptate?</span>
+            </div>
+            <img src="./img2.avif" alt="">
+        </div>
+    </div>
+
+    <div class="cl1" id="cl3">
+        <div class="box1" id="box3">
+            <img src="./img3.avif" alt="">
+            <div class="t2">
+                <h1>Curious Puppies</h1>
+                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod delectus voluptatibus atque cumque facilis. Eius dolore error natus pariatur minima quas, iure ex doloribus id, ducimus eum dolorum officia voluptate?</span>
+            </div>
+        </div>
+    </div>
+    <footer>&copy; Puppy parallax demo</footer>
+</body>
+</html>
